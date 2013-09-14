@@ -1,0 +1,12 @@
+<%= erb :"_header" %>
+
+<div id="navigation" class="navbar">
+	<a href="/" >home</a>
+	<a href="/about" <% if @page && @page == "about" %> class="active" <% end %> >about</a>
+	<a href="/projects" <% if @page && @page == 'projects' %> class="active" <% end %> >recent projects</a>
+	<a href="/misc/resume.pdf">resume</a>
+</div>
+<div id="content">
+	<h1>Hello world</h1>
+</div>
+<% erb :"_footer" %>

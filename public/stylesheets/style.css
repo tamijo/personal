@@ -1,0 +1,109 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+@font-face {
+  font-family: 'fabricaregular';
+  src: url("/misc/font/Fabrica.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muliregular';
+  src: url("/misc/font/muli-regular-webfont.eot");
+  src: url("/misc/font/muli-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/misc/font/muli-regular-webfont.woff") format("woff"), url("/misc/font/muli-regular-webfont.ttf") format("truetype"), url("/misc/font/muli-regular-webfont.svg#muliregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  background: url("/img/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  /*font-family: 'fabricaregular';*/
+  font-family: 'Open Sans';
+  /*font-family: 'muliregular';*/ }
+
+div#header {
+  width: 100%;
+  /*background-color: rgba(34,99,116,.3);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 120px;
+  margin-top: 75px;
+  color: white; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.brand {
+  /*font-family: 'Inika', serif;*/
+  font-size: 60px;
+  padding-left: 1em;
+  display: inline-block;
+  line-height: 0.7;
+  font-weight: normal; }
+
+.links {
+  font-weight: normal;
+  margin-right: 6em;
+  font-size: 1.5em;
+  padding-top: 10px; }
+
+ul.no-style {
+  /*list-style-image: url("../chevron-right.png");*/
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+ul.no-style li {
+  background-image: url("/img/chevron-right.png");
+  background-repeat: no-repeat;
+  background-position: 0px 8px;
+  padding-left: 20px; }
+
+a {
+  color: white;
+  display: inline-block; }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #80af83; }
+
+/** Main pages **/
+#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  height: 28px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgba(1, 1, 1, 0.8); }
+
+#navigation a {
+  font-size: 1em;
+  line-height: 20px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+div#content {
+  background-image: url("/img/furley_bg.png");
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 45px;
+  text-align: center; }
+
+a.active {
+  text-decoration: underline; }
