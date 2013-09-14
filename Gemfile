@@ -1,2 +1,3 @@
-require 'rubygems'
-gem 'sinatra'
+source 'https://rubygems.org'
+
+gem 'sinatra', '1.0'
