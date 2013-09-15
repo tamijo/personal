@@ -3,6 +3,13 @@ require 'sass'
 
 PROJECTS = [
 	{
+	 	"title" => "Call to Action",
+	 	"subtitle" => "User Interface",
+	 	"description" => "derp",
+	 	"url" => "derp",
+	 	"img" => "derp"
+		},
+	{
 		"title" => "StageIt",
 		"subtitle" => "Final Project",
 		"description" => "A small application created with HTML, CSS, JavaScript using Parse
