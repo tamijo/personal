@@ -18,6 +18,23 @@ html {
     background-size: cover;
 
 }
+@font-face {
+    font-family: 'fabricaregular';
+    src: url('/misc/font/Fabrica.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'muliregular';
+    src: url('/misc/font/muli-regular-webfont.eot');
+    src: url('/misc/font/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/misc/font/muli-regular-webfont.woff') format('woff'),
+         url('/misc/font/muli-regular-webfont.ttf') format('truetype'),
+         url('/misc/font/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     font-family: 'Open Sans';
@@ -117,22 +134,14 @@ div#content {
     padding-top: 45px;
     text-align: center;
 }
-/*
-@font-face {
-    font-family: 'fabricaregular';
-    src: url('/misc/font/Fabrica.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 
+#banner {
+    font-family: 'Noticia Text', serif;
+    height:60px;
+    background: url("/img/banner2.png") no-repeat top center;
+    background-size:auto auto;
+    color: rgb(240, 240, 240);
 }
-@font-face {
-    font-family: 'muliregular';
-    src: url('/misc/font/muli-regular-webfont.eot');
-    src: url('/misc/font/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/misc/font/muli-regular-webfont.woff') format('woff'),
-         url('/misc/font/muli-regular-webfont.ttf') format('truetype'),
-         url('/misc/font/muli-regular-webfont.svg#muliregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+/*
+
 */
