@@ -1,14 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 html, body {
   padding: 0;
   margin: 0;
   height: 100%; }
 
 html {
-  background: url("/img/bg.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  /*    background: url('/img/bg.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;*/ }
 
 @font-face {
   font-family: 'fabricaregular';
@@ -24,7 +25,8 @@ html {
   font-style: normal; }
 
 body {
-  font-family: 'Open Sans'; }
+  /*font-family: 'Open Sans';*/
+  font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
 
 .pull-left {
   float: left; }
@@ -80,6 +82,7 @@ a {
 
 /** Main pages **/
 #navigation {
+  font-family: 'Open Sans', 'sans-serif';
   position: fixed;
   top: 0;
   width: 100%;
@@ -97,21 +100,58 @@ a {
       text-decoration: none;
       border-bottom: 1px solid #80af83; }
 
-div#content {
+div#wrap {
   background-image: url("/img/furley_bg.png");
-  width: 1000px;
-  height: 100%;
+  /*background: rgba(255, 255, 255, 0.85);*/
+  /*background-color: #d2efe4;*/
+  width: 80%;
+  min-height: 110%;
+  overflow: scroll;
   margin: 0 auto;
   padding-top: 45px;
   text-align: center; }
 
+div#content {
+  width: 75%;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'sans-serif'; }
+
 #banner {
   font-family: 'Noticia Text', serif;
+  font-family: 'Roboto Slab', serif;
   height: 60px;
   background: url("/img/banner2.png") no-repeat top center;
-  background-size: auto auto;
-  color: #f0f0f0; }
+  background-size:auto auto;
+  color: white;
+  line-height: 48px; }
+
+/*.border{
+  width:433px;
+
+}*/
+img.me {
+  height: 300px;
+  /*height: 245px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-right: 20px;
+  float: left; */
+}
+
+.highlight {
+  color: #80af83; }
+
+#description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 440px;
+  text-align: center;
+  font-size: 1em; 
+}
 
 /*
-
+font-family: 'Arvo', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Inika', serif;
 */

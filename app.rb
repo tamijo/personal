@@ -28,6 +28,7 @@ PROJECTS = [
 ]
 
 
+
 get '/' do
 	erb :index
 end
@@ -36,7 +37,7 @@ get '/about' do
 	erb :main
 end
 get '/projects' do
-	@page = "projects"
+	@page = "recent projects"
 	@projects = PROJECTS
 	erb :main
 end

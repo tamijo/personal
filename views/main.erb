@@ -3,12 +3,17 @@
 <div id="navigation" class="navbar">
 	<a href="/" >home</a>
 	<a href="/about" <% if @page && @page == "about" %> class="active" <% end %> >about</a>
-	<a href="/projects" <% if @page && @page == 'projects' %> class="active" <% end %> >recent projects</a>
+	<a href="/projects" <% if @page && @page == 'recent projects' %> class="active" <% end %> >recent projects</a>
 	<a href="/misc/resume.pdf">resume</a>
 </div>
-<div id="content">
+<div id="wrap">
 	<!-- <img src="/img/banner.png" > -->
-	<h1 id="banner"><%= @page %></h1>
-	Coming soon :)
+	<h1 id="banner"> <%= @page %></h1>
+	<div id="content">
+		<% if @page && @page == "about" %>
+			<%= erb :"_about" %>
+		<% end %>
+		More coming soon :))
+	</div>
 </div>
-<% erb :"_footer" %>
+<%= erb :"_footer" %>
