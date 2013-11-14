@@ -44,7 +44,9 @@ div#header {
   background-color: rgba(0, 0, 0, 0.5);
   height: 120px;
   margin-top: 75px;
-  color: white; }
+  color: white;
+  animation: fadeInLeft 1s;
+  -webkit-animation: fadeInLeft 1s; }
 
 .brand {
   /*font-family: 'Inika', serif;*/
@@ -104,42 +106,37 @@ div#wrap {
   background-image: url("/img/furley_bg.png");
   /*background: rgba(255, 255, 255, 0.85);*/
   /*background-color: #d2efe4;*/
-  width: 80%;
-  min-height: 110%;
+  width: 75%;
+  min-height: 100%;
   overflow: scroll;
   margin: 0 auto;
   padding-top: 45px;
   text-align: center; }
 
 div#content {
-  width: 75%;
+  animation: fadeInUp 1s;
+  -webkit-animation: fadeInUp 1s;
+  width: 70%;
   min-height: 100%;
   margin: 0 auto;
   font-family: 'Open Sans', 'sans-serif'; }
 
 #banner {
-  font-family: 'Noticia Text', serif;
   font-family: 'Roboto Slab', serif;
   height: 60px;
   background: url("/img/banner2.png") no-repeat top center;
-  background-size:auto auto;
+  background-size: auto auto;
   color: white;
-  line-height: 48px; }
+  line-height: 48px;
+  animation: fadeInUp 1s;
+  -webkit-animation: fadeInUp 1s; }
 
-/*.border{
-  width:433px;
-
-}*/
 img.me {
   height: 300px;
-  /*height: 245px;*/
   margin-left: auto;
-  margin-right: auto;
-  /*padding-right: 20px;
-  float: left; */
-}
+  margin-right: auto; }
 
-.highlight {
+span.highlight {
   color: #80af83; }
 
 #description {
@@ -147,10 +144,10 @@ img.me {
   margin-right: auto;
   width: 440px;
   text-align: center;
-  font-size: 1em; 
-}
+  font-size: 1em; }
 
 /*
+font-family: 'Noticia Text', serif;
 font-family: 'Arvo', serif;
 font-family: 'Roboto Slab', serif;
 font-family: 'Inika', serif;
