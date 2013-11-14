@@ -118,7 +118,7 @@ ul.no-style {
 
 div#wrap {
   background-image: url("/img/furley_bg.png");
-  width: 75%;
+  width: 955px;
   min-height: 100%;
   overflow: scroll;
   margin: 0 auto;
@@ -162,7 +162,8 @@ img.me {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  height: 200px; }
+  max-width: 370px;
+  height: auto; }
 
 .projects {
   text-align: left; }
