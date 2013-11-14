@@ -1,0 +1,307 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+$green: rgb(128,175,131);
+$green2: #80af83;
+$green_opaque : rgba(34,99,116,.3);
+$white: #FFFFFF;
+$black_light: rgba(0,0,0,.5);
+$black_dark: rgba(1, 1, 1, 0.8);
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height:100%
+}
+body {
+    font-family: "Helvetica Neue","Helvetica",arial,sans-serif
+}
+
+.pull-left {
+    float:left;
+}
+
+.pull-right {
+    float:right;
+}
+
+.highlight {
+    color: $green2;
+}
+a{
+    display: inline-block;
+
+    &:link, &:visited {
+        text-decoration:none;
+        color:inherit;
+    }
+    &:hover, &:active {
+        text-decoration:none;
+    }
+    &.inline {
+        display: inline;
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 0px;
+    color: $white;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 0.8em;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* #Page Styles
+================================================== */
+/********** index **********/
+div#header {
+    width:100%;
+    background-color: $black_light;
+    height:120px;
+    margin-top:75px;
+    color:$white;
+    animation: fadeInLeft 1s;
+    -webkit-animation: fadeInLeft 1s;
+}
+
+h1.brand {
+    font-family:inherit;
+    font-size: 60px;
+    padding-left: 1em;
+    margin-top: 40px;
+    display: inline-block;
+    line-height: 0.7;
+    font-weight: normal;
+    color: inherit;
+    font-weight: 300;
+    
+}
+
+div.links {
+    font-weight: normal;
+    margin-right: 6em;
+    font-size: 1.5em;
+    padding-top: 16px;
+    a{
+        color:$white;
+        &:hover, &:active {
+            color:$green;
+        }
+    }
+}
+
+ul.no-style {
+    list-style-type: none;
+    padding:0; 
+    margin:0;
+    li {
+        background-image:  url("/img/chevron-right.png");
+        background-repeat: no-repeat;
+        line-height: 20px;
+        background-position: 0px -1px;
+        padding-left: 20px;
+    }
+}
+
+
+
+/****** Main pages **********/
+#navigation {
+    z-index: 1;
+    font-family: 'Open Sans', 'sans-serif';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    height: 28px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: $black_dark;
+    nav.primary {
+        text-align: center;
+        ul, ul li {
+            margin:0px;
+        }
+        ul li {
+            display: inline;
+        }
+        ul li a {
+            display: inline-block;
+            line-height: 20px;
+            font-size: 1em;
+            margin:0 14px;
+            &.active {
+                text-decoration: none;
+                border-bottom: 1px solid $green;
+            }
+
+        }
+    }
+}
+
+
+
+div#wrap {
+    background-image: url("/img/furley_bg.png");
+    width: 955px;
+    min-height: 100%;
+    overflow: scroll;
+    margin: 0 auto;
+    padding-top: 45px;
+    text-align: center;
+    animation: fadeInUp 1s;
+    -webkit-animation: fadeInUp 1s;
+}
+
+div#content {
+    animation: fadeInUp 1s;
+    -webkit-animation: fadeInUp 1s;
+    width: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 525px;*/
+    text-align: center;
+    font-size: 1.1em; 
+
+}
+
+h1.banner {   
+    font-family: 'Roboto Slab', serif;
+    height:60px;
+    background: url("/img/banner2.png") no-repeat top center;
+    background-size:auto auto;
+    color: $white;
+    line-height: 48px;
+    margin-top:20px;
+    font-size: 2.1em;
+/*    animation: fadeInUp 1s;
+    -webkit-animation: fadeInUp 1s;*/
+}
+div.about {
+    text-align: center;
+}
+
+img.me {
+    height:350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========== Projects page ============== */
+.thumbnail {
+    padding: 4px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    max-width:370px;
+    width: inherit;
+}
+
+.projects {
+    
+    text-align: left;
+    
+}
+
+.project {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed gray;
+    .thumbnail {
+        margin-left:0px;
+    }
+    .box {
+        text-align: center;
+        margin-left: 10px;
+        display: inline-block;
+        width: 45%;
+        height: 100%;
+    }
+    .title {
+        margin-top:5px;
+        text-decoration: underline;
+        font-size:1.2em;
+    }
+    .light {
+        font-size: 0.8em;
+        color:gray;
+    }
+    .info {
+        font-size: 1em;
+        margin-left: 20px;
+        margin-top: 10px;
+        display: inline-block;
+        text-align: left;
+    }   
+    a{
+        color: $green;
+
+    }
+}
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@font-face {
+    font-family: 'fabricaregular';
+    src: url('/misc/font/Fabrica.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'muliregular';
+    src: url('/misc/font/muli-regular-webfont.eot');
+    src: url('/misc/font/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/misc/font/muli-regular-webfont.woff') format('woff'),
+         url('/misc/font/muli-regular-webfont.ttf') format('truetype'),
+         url('/misc/font/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

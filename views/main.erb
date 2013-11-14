@@ -1,20 +1,27 @@
 <%= erb :"_header" %>
 
-<div id="navigation" class="navbar">
-	<a href="/" >home</a>
-	<a href="/about" <% if @page && @page == "about" %> class="active" <% end %> >about</a>
-	<a href="/projects" <% if @page && @page == 'recent projects' %> class="active" <% end %> >recent projects</a>
-	<a href="/misc/resume.pdf">resume</a>
+<div id="navigation">
+	<nav class="container primary">
+		<div class="sixteen columns">
+			<ul>
+				<li><a href="/" >home</a></li>
+				<li><a href="/about" <% if @page && @page == "about" %> class="active" <% end %> >about</a></li>
+				<li><a href="/projects" <% if @page && @page == 'recent projects' %> class="active" <% end %> >recent projects</a></li>
+				<li><a href="/misc/resume.pdf">resume</a></li>
+			</ul>
+		</div>
+	</nav>
 </div>
-<div id="wrap">
+<div id="wrap" >
+	<div class="container main">
 	<h1 class="banner"> <%= @page %></h1>
-	<div id="content">
 		<% if @page && @page == "about" %>
 			<%= erb :"_about" %>
 		<% elsif @page && @page == 'recent projects' %>
 			<%= erb :"_projects" %>
 		<% end %>
 	</div>
-	<div class="footer">Made with &hearts; by Tami</div>
 </div>
+	<div class="footer">Made with &hearts; by Tami</div>
+
 <%= erb :"_footer" %>

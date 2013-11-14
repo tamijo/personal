@@ -16,7 +16,7 @@ PROJECTS = [
 		"title" => "StageIt",
 		"subtitle" => "Final Project / Spring 2013",
 		"description" => "A small application created with HTML, CSS, JavaScript using Parse
-		for 6.813, the User Interface Design and Implementation class at MIT",
+		for 6.813, the User Interface Design and Implementation class at MIT.",
 		"url" => "https://github.com/6813-stageIt/stageIt",
 		"img" => "/img/stageit.jpg"
 	},
