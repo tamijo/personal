@@ -7,12 +7,14 @@
 	<a href="/misc/resume.pdf">resume</a>
 </div>
 <div id="wrap">
-	<h1 id="banner"> <%= @page %></h1>
+	<h1 class="banner"> <%= @page %></h1>
 	<div id="content">
 		<% if @page && @page == "about" %>
 			<%= erb :"_about" %>
+		<% elsif @page && @page == 'recent projects' %>
+			<%= erb :"_projects" %>
 		<% end %>
-	More coming soon :))
 	</div>
+	<div class="footer">Made with &hearts; by Tami</div>
 </div>
 <%= erb :"_footer" %>
