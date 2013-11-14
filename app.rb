@@ -14,7 +14,7 @@ PROJECTS = [
 		},
 	{
 		"title" => "StageIt",
-		"subtitle" => "Final Project",
+		"subtitle" => "Final Project / Spring 2013",
 		"description" => "A small application created with HTML, CSS, JavaScript using Parse
 		for 6.813, the User Interface Design and Implementation class at MIT",
 		"url" => "https://github.com/6813-stageIt/stageIt",
@@ -22,7 +22,7 @@ PROJECTS = [
 	},
 	{
 		"title" => "Hunters and Zombies",
-		"subtitle" => "Android App",
+		"subtitle" => "Android Application / Spring 2013",
 		"description" => "A geolocation game made for Android phones in 21W.789, the Communicating
 		with Mobile Technology class.",
 		"url" => "https://github.com/TeamGamey/HuntersAndZombiesDemo",
