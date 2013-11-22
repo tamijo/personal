@@ -157,15 +157,21 @@ ul.no-style {
     }
 }
 
+.main {
+    min-height: 100%;
+}
 
+.text {
+    text-align: center;
+}
 
 div#wrap {
     background-image: url("/img/furley_bg.png");
-    width: 955px;
     min-height: 100%;
     overflow: scroll;
     margin: 0 auto;
     padding-top: 45px;
+    padding-bottom: 45px;    
     text-align: center;
     animation: fadeInUp 1s;
     -webkit-animation: fadeInUp 1s;
@@ -206,7 +212,7 @@ div.about {
 }
 
 img.me {
-    height:350px;
+    max-width:526px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -214,13 +220,11 @@ img.me {
 /* ========== Projects page ============== */
 .thumbnail {
     padding: 4px;
-    line-height: 20px;
     border: 1px solid #ddd;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    max-width:370px;
-    width: inherit;
+    
 }
 
 .projects {
@@ -237,6 +241,9 @@ img.me {
     border-bottom: 1px dashed gray;
     .thumbnail {
         margin-left:0px;
+        max-width:370px;
+        width: inherit;
+        line-height: 20px;
     }
     .box {
         text-align: center;
@@ -279,10 +286,32 @@ img.me {
 	@media only screen and (max-width: 767px) {}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        div.main{
+            width:100% !important;
+        }
+    }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+        div.main{
+            width:100% !important;
+            height:100%;
+        }
+        h1.banner {  
+        background-size: 100px; 
+        line-height: 32px;
+        background-size: 300px auto;
+        font-size:1.8em;
+        }
+        nav select {
+            display: inline-block !important;
+
+        }
+        nav ul {
+            display:none;
+        }
+    }
 
 
 /* #Font-Face

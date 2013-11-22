@@ -10,10 +10,12 @@
 				<li><a href="/misc/resume.pdf">resume</a></li>
 			</ul>
 		</div>
+		<select style="display:none;" id="menu"></select>
 	</nav>
 </div>
+<div class="container fourteen columns offset-by-one main">
 <div id="wrap" >
-	<div class="container main">
+	
 	<h1 class="banner"> <%= @page %></h1>
 		<% if @page && @page == "about" %>
 			<%= erb :"_about" %>
@@ -22,6 +24,6 @@
 		<% end %>
 	</div>
 </div>
-	<div class="footer">Made with &hearts; by Tami</div>
+	<!-- <footer class="footer">Made with &hearts; by Tami</footer> -->
 
 <%= erb :"_footer" %>
