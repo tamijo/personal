@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
@@ -38,7 +39,8 @@ a {
     text-decoration: none;
     color: inherit; }
   a:hover, a:active {
-    text-decoration: none; }
+    text-decoration: underline;
+    text-decoration-color: #80af83; }
   a.inline {
     display: inline; }
 
