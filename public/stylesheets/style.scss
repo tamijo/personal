@@ -12,6 +12,11 @@ html, body {
     height:100%
 }
 
+body {
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+}
+
 html {
 /*    background: url('/img/bg.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
