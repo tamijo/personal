@@ -4,7 +4,7 @@ require 'sass'
 PROJECTS = [
 	{
 	 	"title" => "Call to Action",
-	 	"subtitle" => "MIT's Center for Civic Media / January-June 2013",
+	 	"subtitle" => "JavaScript Prototype / January-June 2013",
 	 	"description" => "An interface made in HTML, CSS, and JavaScript for 
 	 	<a href='http://calltoaction.mit.edu'>Call To Action</a>, an open-source web platform 
 	 	for creating telephone-based services being developed at 
