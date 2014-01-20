@@ -55,8 +55,12 @@ a {
   position: absolute;
   width: 100%; }
 
-/* Navigation bar */
+/************ Navigation bar *************************/
 .navbar-black {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   background-color: rgba(1, 1, 1, 0.8);
   border: none;
   height: 35px;
@@ -97,7 +101,7 @@ a {
 
 /* #Page Styles
 ================================================== */
-/********** index **********/
+/* ========== index ================ */
 div#header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -108,7 +112,7 @@ div#header {
   -webkit-animation: fadeInLeft 1s; }
 
 h1.brand {
-  font-family: inherit;
+  font-family: "Roboto Slab";
   font-size: 60px;
   padding-left: 1em;
   margin-top: 40px;
@@ -137,39 +141,14 @@ ul.no-style {
     background-repeat: no-repeat;
     line-height: 20px;
     background-position: 0px -1px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-bottom: 10px; }
 
-/****** Main pages **********/
-#navigation {
-  z-index: 1;
-  font-family: 'Open Sans', 'sans-serif';
-  position: fixed;
-  top: 0;
-  width: 100%;
-  /*    color: white;
-      height: 28px;
-      text-align: center;
-      padding-top: 5px;
-      background-color: $black_dark;*/ }
-  #navigation nav.primary {
-    text-align: center; }
-    #navigation nav.primary ul, #navigation nav.primary ul li {
-      margin: 0px; }
-    #navigation nav.primary ul li {
-      display: inline; }
-    #navigation nav.primary ul li a {
-      display: inline-block;
-      line-height: 20px;
-      font-size: 1em;
-      margin: 0 14px; }
-      #navigation nav.primary ul li a.active {
-        text-decoration: none;
-        border-bottom: 1px solid #80af83; }
-
+/*============= Pages =================*/
 .main {
   min-height: 100%; }
 
-div#wrap {
+div#content {
   background-image: url("/img/furley_bg.png");
   min-height: 100%;
   height: 100%;
@@ -178,25 +157,17 @@ div#wrap {
   padding-top: 45px;
   padding-bottom: 45px;
   text-align: center;
-  animation: fadeInUp 1s;
-  -webkit-animation: fadeInUp 1s; }
+  /*    animation: fadeInUp 1s;
+      -webkit-animation: fadeInUp 1s;*/ }
 
 div#content {
-  animation: fadeInUp 1s;
-  -webkit-animation: fadeInUp 1s;
+  /*    animation: fadeInUp 1s;
+      -webkit-animation: fadeInUp 1s;*/
   /*width: 80%;
   min-height: 100%;
   margin: 0 auto;*/
   font-family: 'Open Sans', 'sans-serif'; }
 
-/*.page {
-    margin-left: auto;
-    margin-right: auto;
-    width: 525px;
-    text-align: center;
-    font-size: 1.1em; 
-
-}*/
 h1.banner {
   font-family: 'Roboto Slab', serif;
   height: 60px;
@@ -206,14 +177,16 @@ h1.banner {
   line-height: 48px;
   margin-top: 20px;
   font-size: 2.1em;
-  /*    animation: fadeInUp 1s;
-      -webkit-animation: fadeInUp 1s;*/ }
+  animation: fadeInDown 1s;
+  -webkit-animation: fadeInDown 1s; }
 
 div.about {
   text-align: center; }
 
 img.me {
-  float: none; }
+  float: none;
+  animation: fadeInDown 1s;
+  -webkit-animation: fadeInDown 1s; }
 
 /* ========== Projects page ============== */
 .custom-thumbnail {
@@ -231,7 +204,9 @@ img.me {
   margin-right: auto;
   margin-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px dashed gray; }
+  border-bottom: 1px dashed gray;
+  animation: fadeInUp 1s;
+  -webkit-animation: fadeInUp 1s; }
   .project .thumbnail {
     margin-left: 0px;
     max-width: 370px;
@@ -240,9 +215,9 @@ img.me {
   .project .box {
     text-align: center;
     margin-left: 10px;
-    display: inline-block;
-    width: 45%;
-    height: 100%; }
+    /*        display: inline-block;
+            width: 45%;
+            height: 100%;*/ }
   .project .title {
     margin-top: 5px;
     text-decoration: underline;
@@ -287,15 +262,3 @@ img.me {
     display: none; } }
 /* #Font-Face
 ================================================== */
-@font-face {
-  font-family: 'fabricaregular';
-  src: url("/misc/font/Fabrica.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'muliregular';
-  src: url("/misc/font/muli-regular-webfont.eot");
-  src: url("/misc/font/muli-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/misc/font/muli-regular-webfont.woff") format("woff"), url("/misc/font/muli-regular-webfont.ttf") format("truetype"), url("/misc/font/muli-regular-webfont.svg#muliregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }

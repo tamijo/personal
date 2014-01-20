@@ -1,12 +1,14 @@
-<div class="container fourteen columns offset-by-one">
-<div class="projects">
+
+<div class="projects col-md-10 col-md-offset-1">
 		<% if @projects %>
 			<% @projects.each do |project| %>
-			<div class="project container row thirteen columns">
+			<div class="project row">
 				<!-- <div class="seven columns alpha"> -->
-					<a class="inline seven columns alpha" href=<%= project['img']%>><img class="thumbnail pull-left" src=<%= project['img']%> ></a>
-				<!-- </div> -->
-				<div class="box six columns omega"> <!-- box -->
+				<div class="row col-md-12">
+				<div class="col-md-7">
+					<a class="" href=<%= project['img']%>><img class="img-responsive img-thumbnail" src=<%= project['img']%> ></a>
+				</div>
+				<div class="box col-md-4"> <!-- box -->
 					<div class="title"><%= project['title'] %></div>
 					<div class="light"><%= project['subtitle'] %></div>
 					<div class="info">
@@ -14,10 +16,10 @@
 					</div><br />
 					<a class="source" href=<%= project['url']%> >Source</a>
 				</div>
+				</div>
 			</div>
 			<div class="clearfix"></div>
 			<% end %>
  
 		  <% end %>
-</div>
 </div>
