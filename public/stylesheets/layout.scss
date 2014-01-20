@@ -353,12 +353,22 @@ ul.contact {
         background-size: 300px auto;
         font-size:1.8em;
         }
-        nav select {
+/*        nav select {
             display: inline-block !important;
 
         }
         nav ul {
             display:none;
+        }*/
+        h1.brand {
+            font-size: 40px;
+
+        }
+        .links {
+            margin-top: 42px;
+        }
+        .links ul li {
+            padding: 30px;
         }
     }
 

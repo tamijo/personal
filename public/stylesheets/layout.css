@@ -274,10 +274,20 @@ ul.contact {
     background-size: 300px auto;
     font-size: 1.8em; }
 
-  nav select {
-    display: inline-block !important; }
+  /*        nav select {
+              display: inline-block !important;
+  
+          }
+          nav ul {
+              display:none;
+          }*/
+  h1.brand {
+    font-size: 40px; }
 
-  nav ul {
-    display: none; } }
+  .links {
+    margin-top: 42px; }
+
+  .links ul li {
+    padding: 30px; } }
 /* #Font-Face
 ================================================== */
