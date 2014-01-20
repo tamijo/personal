@@ -1,0 +1,279 @@
+$green: rgb(128,175,131);
+$green2: #80af83;
+$green_opaque : rgba(34,99,116,.3);
+$white: #FFFFFF;
+$black_light: rgba(0,0,0,.5);
+$black_dark: rgba(1, 1, 1, 0.8);
+$tan: #F7F3ED;
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height:100%
+
+}
+
+body {
+    /*font-family: "Helvetica Neue","Helvetica",arial,sans-serif*/
+    font-family: "Open Sans";
+        -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.highlight {
+    color: $green2;
+}
+
+.fadeinLeft {
+			animation: fadeInLeft 1s;
+	-webkit-animation: fadeInLeft 1s;	
+}
+
+.fadeinRight {
+	    	animation: fadeInRight 1s;
+	-webkit-animation: fadeInRight 1s;
+}
+
+.fadeinUp {
+	    	animation: fadeInUp 1s;
+	-webkit-animation: fadeInUp 1s;
+}
+
+.fadeinDown {
+	    	animation: fadeInDown 1s;
+	-webkit-animation: fadeInDown 1s;
+}
+
+a{
+    display: inline-block;
+
+    &:link, &:visited {
+        text-decoration:none;
+        color:inherit;
+    }
+    &:hover, &:active {
+        text-decoration:underline;
+        text-decoration-color:$green2; 
+    }
+    &.inline {
+        display: inline;
+    }
+}
+
+h1.banner {   
+    font-family: 'Roboto Slab', serif;
+    height:60px;
+    background: url("/img/banner2.png") no-repeat top center;
+    background-size:auto auto;
+    color: $white;
+    line-height: 48px;
+    margin-top:20px;
+    font-size: 2.1em;
+    text-align: center;
+/*    animation: fadeInUp 1s;
+    -webkit-animation: fadeInUp 1s;*/
+}
+
+/* Navbar */
+header {
+	font-size: 1em;
+	height:50px;
+	text-align:center;
+	position:fixed;
+	width: 100%;
+	z-index: 1001;
+	&.scrollable-before {
+		display:none;
+	}
+	.container {
+		background:rgb(128, 175, 131);
+		border-bottom: 4px solid #eae8d9;
+		width: 100%;
+		text-align: center;
+
+	}
+	ul.nav {
+		padding-left: 60px;
+		padding-right:0;
+		list-style: none;
+		margin:0 auto;
+		position: relative;
+		display: inline-block;
+		float:none;
+		li {
+			padding: 7px;
+			margin:8px 10px;
+			display: inline-block;
+			float:none;
+			margin: 0px 10px 0 10px;
+			color:white;
+			a{
+				/*display: inline;*/
+				color:white;
+			}
+		}
+
+	}
+}
+
+section {
+	width:100%;
+	position:relative;
+}
+
+/* Home section */
+#home {
+    display: table;
+    height: 800px;
+    /*position: relative;*/
+    .pattern-overlay {
+        display: table-cell;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    img.logo {
+    	margin-left: auto;
+    	margin-right:auto;
+    	animation: fadeInDown 1s;
+    	-webkit-animation: fadeInDown 1s;
+    }
+    a.scroll-to {
+		position:absolute;
+		bottom:25px;
+		left:47%;
+		display:block;
+		background-image: url("/img/arrow-1.png");
+		background-repeat: no-repeat;
+		background-size:50px 50px;
+		height:50px; 
+		width:50px;
+    			animation: fadeInUp 1s;
+    	-webkit-animation: fadeInUp 1s;
+		&:hover {
+			background-image: url("/img/arrow-2-2.png");
+		}
+	}
+}
+
+/* About Section */
+#about {
+	/*background:$tan;*/
+	background-image: url("/img/furley_bg.png");
+	border-top: 6px solid #f0eee0;
+    min-height:470px;
+    height:auto;
+    position: relative;
+    width:100%;
+    padding: 30px;
+    .container {
+    	padding-left:20px;
+    }
+
+	.me {
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		border:1px solid $tan;
+		padding: 2px;
+		background: url("/img/me.jpg") no-repeat 24% 66%;
+		background-size: 466px;
+		&.animate {
+			    	animation: fadeInLeft 1s;
+	    	-webkit-animation: fadeInLeft 1s;
+		}
+
+	}
+	.description {
+		font-size: 1.2em;
+		p {
+			line-height: 30px;
+		}
+		&.animate {
+			    	animation: fadeInRight 1s;
+			-webkit-animation: fadeInRight 1s;
+		}
+	}
+
+
+}
+.featurette-divider {
+	margin:0;
+
+}
+
+/* Projects section */
+#recentprojects {
+	border-top: 2px solid  gray;
+	background-color:$tan;
+	background-image: url("/img/grey_wash_wall.png");
+	padding-top: 30px;
+	.projects {
+	    text-align: left;
+	    min-height: 400px;
+	}
+	.project {
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 20px;
+	    .thumbnail {
+	    	min-height: 402px;
+
+	    }
+	    &.pre-animate {
+	    	animation: fadeInUp 1s;
+		-webkit-animation: fadeInUp 1s;
+	    } 
+
+	    .img-thumbnail {
+	    	min-height: 200px;
+	    }
+
+	    /*padding-bottom: 20px;
+	    border-bottom: 1px dashed gray;*/
+/*	    .img-thumbnail {
+	        margin-left:0px;
+	        max-width:370px;
+	        width: inherit;
+	        line-height: 20px;
+	    } 220 112 14
+	    .box {
+	        text-align: center;
+	        margin-left: 10px;
+	        display: inline-block;
+	        width: 45%;
+	        height: 100%;
+	    }*/
+	    .title {
+	        margin-top:5px;
+	        text-decoration: underline;
+	        font-size:1.3em;
+	    }
+	    .light {
+	        font-size: 0.9em;
+	        color:gray;
+	    }
+	    .info {
+	        font-size: 1em;
+	        margin-left: 20px;
+	        margin-top: 10px;
+	        display: inline-block;
+	        text-align: left;
+	    }   
+	    a{
+	        color: $green;
+
+	    }
+	}
+}
+
+
+
+
+
+
+

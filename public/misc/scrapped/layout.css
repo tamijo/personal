@@ -22,8 +22,25 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: "Helvetica Neue","Helvetica",arial,sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
+
+/* Home section */
+#home {
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%; }
+  #home .pattern-overlay {
+    display: table-cell;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle; }
+
+#about {
+  height: 400px;
+  position: relative;
+  background-image: url("/img/furley_bg.png");
+  width: 100%; }
 
 .pull-left {
   float: left; }
@@ -54,46 +71,6 @@ a {
   bottom: 0;
   position: absolute;
   width: 100%; }
-
-/* Navigation bar */
-.navbar-black {
-  background-color: rgba(1, 1, 1, 0.8);
-  border: none;
-  height: 35px;
-  min-height: 30px;
-  color: white; }
-  .navbar-black .navbar-collapse {
-    border: none;
-    text-align: center;
-    background-color: rgba(1, 1, 1, 0.5); }
-  .navbar-black .navbar-nav {
-    display: inline-block;
-    float: none; }
-  .navbar-black .nav > li {
-    padding-left: 33px; }
-  .navbar-black .navbar-nav > li > a {
-    color: white;
-    font-size: 1.1em;
-    padding-top: 8px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px; }
-    .navbar-black .navbar-nav > li > a:hover {
-      text-decoration: underline;
-      text-decoration-color: #80af83;
-      color: white;
-      background-color: inherit; }
-    .navbar-black .navbar-nav > li > a.active {
-      border-bottom: 1px solid #80af83; }
-  .navbar-black .navbar-toggle {
-    padding: 8px 9px;
-    margin-top: 2px;
-    border-color: #80af83;
-    margin-bottom: 0px; }
-    .navbar-black .navbar-toggle .icon-bar {
-      background-color: #80af83; }
-    .navbar-black .navbar-toggle:hover {
-      /*background-color: $green2;*/ }
 
 /* #Page Styles
 ================================================== */
@@ -146,11 +123,11 @@ ul.no-style {
   position: fixed;
   top: 0;
   width: 100%;
-  /*    color: white;
-      height: 28px;
-      text-align: center;
-      padding-top: 5px;
-      background-color: $black_dark;*/ }
+  color: white;
+  height: 28px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgba(1, 1, 1, 0.8); }
   #navigation nav.primary {
     text-align: center; }
     #navigation nav.primary ul, #navigation nav.primary ul li {
@@ -169,10 +146,12 @@ ul.no-style {
 .main {
   min-height: 100%; }
 
+.text {
+  text-align: center; }
+
 div#wrap {
   background-image: url("/img/furley_bg.png");
   min-height: 100%;
-  height: 100%;
   overflow: scroll;
   margin: 0 auto;
   padding-top: 45px;
@@ -184,19 +163,18 @@ div#wrap {
 div#content {
   animation: fadeInUp 1s;
   -webkit-animation: fadeInUp 1s;
-  /*width: 80%;
+  width: 80%;
   min-height: 100%;
-  margin: 0 auto;*/
+  margin: 0 auto;
   font-family: 'Open Sans', 'sans-serif'; }
 
-/*.page {
-    margin-left: auto;
-    margin-right: auto;
-    width: 525px;
-    text-align: center;
-    font-size: 1.1em; 
+.page {
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 525px;*/
+  text-align: center;
+  font-size: 1.1em; }
 
-}*/
 h1.banner {
   font-family: 'Roboto Slab', serif;
   height: 60px;
@@ -213,10 +191,12 @@ div.about {
   text-align: center; }
 
 img.me {
-  float: none; }
+  max-width: 526px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* ========== Projects page ============== */
-.custom-thumbnail {
+.thumbnail {
   padding: 4px;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
