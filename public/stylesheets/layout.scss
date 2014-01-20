@@ -30,7 +30,7 @@ html, body {
     height:100%
 }
 body {
-    font-family: "Helvetica Neue","Helvetica",arial,sans-serif;
+    font-family: 'Open Sans', 'sans-serif',arial,sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -199,19 +199,9 @@ div#content {
     padding-top: 45px;
     padding-bottom: 45px;    
     text-align: center;
-/*    animation: fadeInUp 1s;
-    -webkit-animation: fadeInUp 1s;*/
-}
-
-div#content {
-/*    animation: fadeInUp 1s;
-    -webkit-animation: fadeInUp 1s;*/
-    /*width: 80%;
-    min-height: 100%;
-    margin: 0 auto;*/
     font-family: 'Open Sans', 'sans-serif';
-}
 
+}
 
 h1.banner {   
     font-family: 'Roboto Slab', serif;
@@ -230,10 +220,30 @@ div.about {
     text-align: center;
 }
 
+.about-text {
+     animation: fadeInUp 1s;
+    -webkit-animation: fadeInUp 1s;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
 img.me {
     float:none;
         animation: fadeInDown 1s;
     -webkit-animation: fadeInDown 1s;
+}
+.contact {
+       animation: fadeInUp 1s;
+    -webkit-animation: fadeInUp 1s; 
+}
+ul.contact {
+
+    list-style-type: none;
+    li {
+        float:left;
+        font-size:1.5em;
+        padding-left:35px;
+    }
 }
 
 /* ========== Projects page ============== */
@@ -269,9 +279,6 @@ img.me {
     .box {
         text-align: center;
         margin-left: 10px;
-/*        display: inline-block;
-        width: 45%;
-        height: 100%;*/
     }
     .title {
         margin-top:5px;
@@ -301,10 +308,31 @@ img.me {
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 778px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 778px) {
+        .links {
+            background-color: $black_light;
+            width:100%;
+            margin-right:0px !important;
+            padding-top: 0px !important;
+            margin-top: 28px;
+            border:1px solid black;
+
+            ul{
+                list-style-type: none;
+
+                li {
+                    background-image: none;
+                    float:left;
+                    padding:34px;
+                }
+            }
+
+        }
+
+    }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
