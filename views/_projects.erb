@@ -3,12 +3,11 @@
 		<% if @projects %>
 			<% @projects.each do |project| %>
 			<div class="project row">
-				<!-- <div class="seven columns alpha"> -->
 				<div class="row col-md-12">
-				<div class="col-md-7">
+				<div class="col-md-6">
 					<a class="" href=<%= project['img']%>><img class="img-responsive img-thumbnail" src=<%= project['img']%> ></a>
 				</div>
-				<div class="box col-md-4"> <!-- box -->
+				<div class="box col-md-5">
 					<div class="title"><%= project['title'] %></div>
 					<div class="light"><%= project['subtitle'] %></div>
 					<div class="info">

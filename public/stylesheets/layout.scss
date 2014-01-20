@@ -1,12 +1,3 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
 /* Table of Content
 ==================================================
 	#Site Styles
@@ -32,21 +23,37 @@ html, body {
 body {
     font-family: 'Open Sans', 'sans-serif',arial,sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
-
-.pull-left {
-    float:left;
-}
-
-.pull-right {
-    float:right;
+.background { 
+  background: url("/img/bg7.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
 }
 
 .highlight {
     color: $green2;
 }
+.underline {
+    border-bottom: 1px solid $green2;
+}
+p, div, h1, h2, h3, h4{
+    cursor: default;
+    &.highlight {
+        cursor: inherit;
+    }
+}
 a{
-    display: inline-block;
 
     &:link, &:visited {
         text-decoration:none;
@@ -61,18 +68,7 @@ a{
     }
 }
 
-.footer {
-    text-align: center;
-    margin-bottom: 0px;
-    color: $white;
-    font-family: 'Open Sans', 'sans-serif';
-    font-size: 0.8em;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
-/************ Navigation bar *************************/
+/* ============== Navigation bar ================ */
 .navbar-black{
     position: fixed;
     top: 0;
@@ -86,7 +82,10 @@ a{
     .navbar-collapse {
         border:none;
         text-align: center;
-        background-color: rgba(1, 1, 1, 0.5);
+        &.in{
+           background-color: rgba(1, 1, 1, 0.7); 
+        }
+        
     }
     .navbar-nav {
       display: inline-block;
@@ -120,9 +119,6 @@ a{
         .icon-bar{
         background-color: $green2;
         }
-        &:hover {
-            /*background-color: $green2;*/
-        }
     }
 } 
 
@@ -151,9 +147,7 @@ h1.brand {
     display: inline-block;
     line-height: 0.7;
     font-weight: normal;
-    color: inherit;
-    font-weight: 300;
-    
+    color: inherit;   
 }
 
 div.links {
@@ -185,15 +179,12 @@ ul.no-style {
 
 /*============= Pages =================*/
 
-.main {
-    min-height: 100%;
-}
-
 
 div#content {
-    background-image: url("/img/furley_bg.png");
+    background-image: url("/img/greyzz.png");
     min-height: 100%;
     height:100%;
+    max-width: 960px;
     overflow: scroll;
     margin: 0 auto;
     padding-top: 45px;
@@ -216,10 +207,6 @@ h1.banner {
     -webkit-animation: fadeInDown 1s;
 }
 
-div.about {
-    text-align: center;
-}
-
 .about-text {
      animation: fadeInUp 1s;
     -webkit-animation: fadeInUp 1s;
@@ -237,12 +224,20 @@ img.me {
     -webkit-animation: fadeInUp 1s; 
 }
 ul.contact {
-
     list-style-type: none;
     li {
-        float:left;
+        display: inline;
         font-size:1.5em;
-        padding-left:35px;
+        /*padding-right:30px;*/
+        padding: .2em 1em;
+        a {
+            
+            /*border-bottom: 1px dotted $green2;*/
+            &:hover{
+                text-decoration: none;
+                color:#658A67;
+            }
+        }
     }
 }
 
@@ -298,6 +293,10 @@ ul.contact {
     }   
     a{
         color: $green;
+        &:hover{
+            text-decoration: none;
+                color:#658A67;
+        }
 
     }
 }
@@ -331,18 +330,14 @@ ul.contact {
             }
 
         }
-
     }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-        div.main{
-            width:100% !important;
-        }
+	@media only screen and (min-width: 485px) and (max-width: 767px) {
     }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
+	@media only screen and (max-width: 485px) {
         div.main{
             width:100% !important;
             height:100%;
@@ -353,13 +348,6 @@ ul.contact {
         background-size: 300px auto;
         font-size:1.8em;
         }
-/*        nav select {
-            display: inline-block !important;
-
-        }
-        nav ul {
-            display:none;
-        }*/
         h1.brand {
             font-size: 40px;
 
@@ -368,7 +356,7 @@ ul.contact {
             margin-top: 42px;
         }
         .links ul li {
-            padding: 30px;
+            padding: 17px;
         }
     }
 
