@@ -26,12 +26,12 @@ body {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 .background { 
-  background: url("/img/bg7.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-      animation: fadeIn 1s;
+    background: url("/img/bg7.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
     position: fixed;
     height: 100%;
@@ -135,6 +135,7 @@ div#header {
     background-color: $black_light;
     height:120px;
     margin-top:75px;
+    position: fixed;
     color:$white;
     animation: fadeInLeft 1s;
     -webkit-animation: fadeInLeft 1s;
@@ -228,7 +229,7 @@ ul.contact {
     list-style-type: none;
     li {
         display: inline;
-        font-size:1.5em;
+        font-size:1.2em;
         /*padding-right:30px;*/
         padding: .2em 1em;
         a {
@@ -325,6 +326,7 @@ ul.contact {
 
                 li {
                     background-image: none;
+                    border-right: 1px solid black;
                     float:left;
                     padding:34px;
                 }
