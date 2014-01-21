@@ -1,6 +1,7 @@
 # SASS-Cache
 .sass-cache
 # Css files
-.css
+*.css
 # stupid mac ds_store
 .DS_Store
+.DS_Store?
