@@ -10,6 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 $green: rgb(128,175,131);
 $green2: #80af83;
+$green_dark:#658A67;
 $green_opaque : rgba(34,99,116,.3);
 $white: #FFFFFF;
 $black_light: rgba(0,0,0,.5);
@@ -42,11 +43,13 @@ body {
     z-index: -5;
 }
 
-.highlight {
-    color: $green2;
-}
-.underline {
+
+/*.underline {
     border-bottom: 1px solid $green2;
+}*/
+
+.bold {
+    font-weight:bold;
 }
 p, div, h1, h2, h3, h4{
     cursor: default;
@@ -61,12 +64,41 @@ a{
         color:inherit;
     }
     &:hover, &:active {
-        text-decoration:underline;
+        text-decoration:none;
         text-decoration-color:$green2; 
     }
     &.inline {
         display: inline;
     }
+}
+.highlight,a.highlight{
+    color: $green2;
+}
+a.highlight:hover{
+    color:$green_dark;
+}
+.bigger {
+    font-size: 1.1em;
+}
+
+.rotate img {
+    -moz-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.rotate img:hover { 
+-webkit-transform: rotate(360deg); 
+-moz-transform: rotate(360deg); 
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transition: rotate(360deg); 
+}
+
+.contact a{
+    display:inline-block;
 }
 
 /* ============== Navigation bar ================ */
@@ -108,9 +140,8 @@ a{
         padding-left:0px;
         padding-right: 0px;
         &:hover {
-            text-decoration: underline;
-            text-decoration-color:$green;
-            color:white;
+            
+            color:$green2;
             background-color: inherit;
         }
         &.active {
@@ -259,7 +290,7 @@ ul.contact {
 }
 
 .projects {
-    
+    padding-top:20px;
     text-align: left;
     
 }
@@ -280,7 +311,7 @@ ul.contact {
     }
     .box {
         text-align: center;
-        margin-left: 10px;
+        /*margin-left: 10px;*/
     }
     .title {
         margin-top:5px;
@@ -292,16 +323,20 @@ ul.contact {
         color:gray;
     }
     .info {
-        font-size: 1em;
+        font-size: 1.1em;
         margin-left: 20px;
         margin-top: 10px;
         display: inline-block;
-        text-align: left;
+        text-align: center;
+        width:80%;
+    }
+    .source {
+        text-align: center;
     }   
     a{
         color: $green;
         &:hover{
-            text-decoration: none;
+            text-decoration: underline;
                 color:#658A67;
         }
 

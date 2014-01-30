@@ -1,23 +1,22 @@
 
-<div class="projects col-md-10 col-md-offset-1">
+<div class="projects">
 		<% if @projects %>
 			<% @projects.each do |project| %>
-			<div class="project row">
-				<div class="row col-md-12">
-				<div class="col-md-6">
-					<a class="" href=<%= project['img']%>><img class="img-responsive img-thumbnail" src=<%= project['img']%> ></a>
+			<div class="project">
+				<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1"><a class="" href=<%= project['img']%>><img class="img-responsive img-thumbnail" src=<%= project['img']%> ></a>
 				</div>
-				<div class="box col-md-5">
-					<div class="title"><%= project['title'] %></div>
+				</div>
+				<div class="box row">
+					<div class="title bold"><%= project['title'] %></div>
 					<div class="light"><%= project['subtitle'] %></div>
 					<div class="info">
-						<%= project['description'] %>
-					</div><br />
-					<a class="source" href=<%= project['url']%> >Source</a>
+						<%= project['description'] %><br />
+						<a class="source" href=<%= project['url']%> >Source</a>
+					</div>
+					</div>
 				</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
+			<!-- <div class="clearfix"></div> -->
 			<% end %>
  
 		  <% end %>
